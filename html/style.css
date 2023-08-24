@@ -1,0 +1,162 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 80px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.links {
+    display: flex;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+.menu-items:hover{
+    text-decoration: underline;
+    color: #017143;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 40px;
+    width: 60%;
+}
+
+.main-content p {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+
+}
+
+#title {
+    margin: 20px;
+    font-size: 85px;
+    font-weight: 500;
+}
+
+span {
+    font-size: 100px;
+    font-weight: 800;
+    color: #017143;
+
+}
+
+.images {
+    margin-left: 50px;
+
+
+}
+
+.js-tabContent li{
+    display: none;
+}
+.js-tabContent li.ativo{
+    margin-left: 20px;
+    display: block;
+    animation: show .7s forwards;
+}
+
+.image img {
+    max-height: 520px;
+}
+
+.aside {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 20px;
+    ;
+}
+
+.social-media li {
+    padding-top: 35px ;
+    margin-right: 20px;
+
+}
+
+.button {
+    margin-left: 25px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    background-color: #017143;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #024328;
+}
+
+.thumbs {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbs li {
+    padding: 40px;
+}
+
+.thumbs img {
+    max-height: 100px;
+}
+.thumbs li:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+    opacity: 0.85;
+}
+.circle{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(117, 51, 51);
+    clip-path: circle(600px at right 800px)
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
